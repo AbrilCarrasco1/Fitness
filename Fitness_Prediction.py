@@ -2,6 +2,7 @@ import numpy as np
 import streamlit as st
 import pandas as pd
 
+
 st.write(''' # Predicción de Fitness ''')
 st.image("salud.jpg", caption="Predicción de Fitness.")
 
@@ -40,6 +41,7 @@ def user_input_features():
 
 df = user_input_features()
 
+from sklearn.tree import DecisionTreeClassifier
 fitness =  pd.read_csv('Fitness_Classification2.csv', encoding='latin-1')
 X = fitness.drop(columns='is_fit')
 Y = fitness['is_fit']
