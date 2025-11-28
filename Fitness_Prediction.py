@@ -23,16 +23,16 @@ def user_input_features():
 
 
 
-  user_input_data = {'Edad:': age,
-                     'Estatura (cm):': height_cm,
-                     'Peso (Kg):': weight_kg,
-                     'Frecuencia Cardiaca:': heart_rate,
-                     'Presión Arterial:': blood_pressure,
-                     'Horas de sueño:': sleep_hours,
-                     'Calidad de alimentación (1 a 10):': nutrition_quality,
-                     'Indice de actividad (1 a 5):': activity_index,
-                     'Fumas:': smokes,
-                     'Género:': gender,
+  user_input_data = {'age': age,
+                     'height_cm': height_cm,
+                     'weight_kg:': weight_kg,
+                     'heart_rate': heart_rate,
+                     'blood_pressure': blood_pressure,
+                     'sleep_hours': sleep_hours,
+                     'nutrition_quality': nutrition_quality,
+                     'activity_index': activity_index,
+                     'smokes': smokes,
+                     'gender': gender,
                     }
 
   features = pd.DataFrame(user_input_data, index=[0])
