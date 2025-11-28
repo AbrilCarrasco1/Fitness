@@ -53,8 +53,8 @@ prediction = classifier.predict(df)
 
 st.subheader('Predicción')
 if prediction == 0:
-  st.write('No Fit')
+  st.write('No estás en forma')
 elif prediction == 1:
-  st.write('Fit')
+  st.write('En forma')
 else:
   st.write('Sin predicción')
